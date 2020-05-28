@@ -6,7 +6,13 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.androiddevs.mvvmnewsapp.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" />
+        android:label="ArticleFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.androiddevs.mvvmnewsapp.data.Article"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
     <fragment
         android:id="@+id/breakingNewsFragment"
         android:name="com.androiddevs.mvvmnewsapp.ui.fragments.BreakingNewsFragment"
